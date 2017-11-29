@@ -14,23 +14,20 @@ Ensure that the following packages (with the specified version) are installed:
 [libSBML 5.13.0](http://sbml.org/Software/libSBML/docs/python-api/libsbml-downloading.html)
 
 Use the following commands on Terminal (Mac and Linux) to install the packages
-```pip install cobra==0.5.4```
+```
+pip install cobra==0.5.4
+pip install scipy==0.13.3
+pip install networkx==1.9.1
+pip install python-libsbml==5.13.0
+```
 
-```pip install scipy==0.13.3```
-
-```pip install networkx==1.9.1```
-
-```pip install python-libsbml==5.13.0```
-
-On windows, navigate to folder ```C:\Python27\Scripts\```, type ```cmd``` in ```Win + R```. Type
-
-```pip.exe install cobra==0.5.4```
-
-```pip.exe install scipy==0.13.3```
-
-```pip.exe install networkx==1.9.1```
-
-```pip.exe install python-libsbml==5.13.0```
+On Windows, navigate to the folder where Python is installed, e.g. ```C:\Python27\Scripts\```, and run `pip.exe` to install the following packages:
+```
+pip.exe install cobra==0.5.4
+pip.exe install scipy==0.13.3
+pip.exe install networkx==1.9.1
+pip.exe install python-libsbml==5.13.0
+```
 
 
 ## Input
