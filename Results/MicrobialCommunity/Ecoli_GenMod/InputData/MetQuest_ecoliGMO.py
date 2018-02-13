@@ -34,7 +34,7 @@ def calculate_biomass_components(G, src, tar1, alwaysexist1, cutoff, filenames):
     for rxns1 in nattr_inv[1]:
         if len(set(pred(rxns1)) - alwaysexist1) >= 5:
             G.remove_node(rxns1)
-    lowerbound, lowerboundreaction, status_dict, me = forward_pass(G, alwaysexist1, src, 0)
+    lowerbound, lowerboundreaction, status_dict, me, alwaysexist_first = forward_pass(G, alwaysexist1, src, 0)
     dagsfound2 = {}
 
     for item in list(alwaysexist1):
