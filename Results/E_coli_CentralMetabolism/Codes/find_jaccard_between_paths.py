@@ -21,11 +21,11 @@ def find_jaccard_between_paths(onlysrctotar):
     return jaccard_values
 
 if __name__ == '__main__':
-    path = '/home/aarthi/Dropbox/Fonts/Helvetica.ttf'
-    prop = fm.FontProperties(fname=path)
+    #path = '/home/aarthi/Dropbox/Fonts/Helvetica.ttf'
+    #prop = fm.FontProperties(fname=path)
     #prop.set_weight = 'light'
-    mpl.rcParams['font.family'] = prop.get_name()
-    mpl.rcParams['font.weight'] = 'light'
+    #mpl.rcParams['font.family'] = prop.get_name()
+    #mpl.rcParams['font.weight'] = 'light'
 
     print 'Load List of lists of subnetworks'
     jaccard_values = find_jaccard_between_paths(onlysrctotar)
@@ -37,8 +37,8 @@ if __name__ == '__main__':
     #plt.rc('xtick',labelsize=36)
     #plt.rc('ytick',labelsize=36)
     plt.hist(jaccard_values, color = 'black', bins=np.arange(min(jaccard_values), max(jaccard_values) +0.025,0.025), alpha = 0.5)
-    plt.xlabel("Jaccard values", fontsize=24,fontproperties=prop)
-    plt.ylabel("Count",fontsize=24,fontproperties=prop)
+    plt.xlabel("Jaccard values", fontsize=24)
+    plt.ylabel("Count",fontsize=24)
     #plt.title("Histogram of jaccard values of the paths",fontsize=14,fontproperties=prop)
   #  plt.savefig("Histogram-jaccard.jpeg")
     paths_diff_len = []
