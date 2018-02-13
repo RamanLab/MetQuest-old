@@ -211,7 +211,7 @@ def find_exc_in_paths(dagsfound):
 
     return exc_ethanol_rxnnames, exc_ethanol_mets,exc_acetate_rxnnames, exc_acetate_mets
 if __name__ == '__main__':
-    gname1 = ['/home/aarthi/Dropbox/Consortia_Manuscript/ConsortiaExamples/Simulations/CommunitySImulations/Miller2010Examples/THree/BMID000000142315_BMID000000140414_BMID000000141529.gpickle']
+    gname1 = ['BMID000000142315_BMID000000140414_BMID000000141529.gpickle']
     cutoff1 = 20
     G = read_gpickle(gname1[0])
     filenames = gname1[0].split('/')[-1].split('.')[0].split('_')
